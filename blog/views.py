@@ -3,4 +3,4 @@ from .models import Post
 
 def post_list(request):
     posts = Post.objects.all()
-    return render(request, "home.html", {"post": posts})
+    return render(request, "home.html", {"posts": posts})
